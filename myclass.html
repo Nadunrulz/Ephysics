@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Class - Ephysics</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      animation: fadeInPage 2s ease-in-out;
+    }
+
+    @keyframes fadeInPage {
+      from {
+        opacity: 0;
+        transform: scale(1.05);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px 30px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 60px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: background-color 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .lesson-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .lesson-item {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .lesson-item:hover {
+      transform: scale(1.05);
+    }
+
+    .lesson-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .lesson-item a {
+      display: block;
+      margin-top: 10px;
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <img src="logo.png" alt="Logo" class="logo">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="myclass.html">My Class</a>
+      <a href="#">Class Payment</a>
+    </div>
+  </div>
+
+  <div class="lesson-grid">
+    <div class="lesson-item">
+      <a href="lesson1.html">
+        <img src="img1.jpg" alt="Lesson 1" />
+        Lesson 1
+      </a>
+    </div>
+    <!-- ඔය තමා ඉතිරි 10 ටත් copy කරගන්න පුළුවන් -->
+  </div>
+</body>
+</html>
